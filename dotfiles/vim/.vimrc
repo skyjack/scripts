@@ -273,6 +273,12 @@ function SetupVimFugitive()
     set diffopt+=vertical
 endfunction
 
+function SetupYankDeleteShortcuts()
+    nnoremap d "_d
+    nnoremap D "_D
+    vnoremap d "_d
+endfunction
+
 "call SetClipboardSettings()
 call SetBufferSwitchingMappings()
 call SetColorScheme()
@@ -292,3 +298,4 @@ call SetupGrepSettings()
 call SetupFzf()
 call SetupTerminal()
 call SetupVimFugitive()
+call SetupYankDeleteShortcuts()
